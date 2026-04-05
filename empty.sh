@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the target directory and log file
-TARGET="/usr"
+TARGET="/usr /var /opt /etc"
 LOG_FILE="$HOME/empty_files_usr.log"
 
 echo "Searching for empty files in $TARGET..."
@@ -21,6 +21,6 @@ echo "------------------------------------------"
 
 # Optional: List the first 10 results for a quick glance
 if [ "$COUNT" -gt 0 ]; then
-    echo "First 10 results:"
-    head -n 10 "$LOG_FILE"
+echo "First 20 results:"
+head -n 10 "$LOG_FILE"
 fi
