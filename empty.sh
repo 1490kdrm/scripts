@@ -19,8 +19,8 @@ echo "Search complete."
 echo "Found $COUNT empty files."
 echo "------------------------------------------"
 
-# Optional: List the first 10 results for a quick glance
+# Optional: List the first 20 results for a quick glance
 if [ "$COUNT" -gt 0 ]; then
 echo "First 20 results:"
-head -n 10 "$LOG_FILE"
+head -n 20 "$LOG_FILE"
 fi
