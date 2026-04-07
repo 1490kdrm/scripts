@@ -27,4 +27,4 @@ if __name__ == "__main__":
     print(f"Found {len(hidden_files)} hidden files. Paths have been written to hidden.txt.")
 
     # Assuming vt-scan is the command for VirusTotal scan, adjust accordingly if different
-    os.system(f"/usr/local/bin/vt scan file --verbose --wait $(cat hidden.txt)")
+    os.system(f"/usr/bin/vt scan file --verbose --wait $(cat hidden.txt)")
